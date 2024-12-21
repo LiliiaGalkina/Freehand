@@ -822,8 +822,15 @@ body {
 	}
 
 	.footer__menu {
-		width: 50%;
+		width: 60%;
 		justify-content: space-between;
+	}
+
+	.footer__menu-item {
+		font-size: 1.375rem;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -862,8 +869,32 @@ body {
 			margin-bottom: 30px;
 		}
 	}
+
 	.prices {
 		padding-top: 50px;
+	}
+
+	.footer__info {
+		padding-bottom: 50px;
+	}
+
+	.footer__right {
+		flex-direction: column;
+	}
+
+	.footer__menu {
+		margin-bottom: 50px;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.footer__title {
+		font-size: 1.5rem;
+	}
+
+	.footer__contact-us {
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -892,25 +923,6 @@ body {
 
 	.footer {
 		padding: 50px 0;
-	}
-
-	.footer__info {
-		padding-bottom: 50px;
-	}
-
-	.footer__right {
-		flex-direction: column;
-	}
-
-	.footer__menu {
-		margin-bottom: 50px;
-		width: 100%;
-		justify-content: space-around;
-	}
-
-	.footer__contact-us {
-		width: 100%;
-		text-align: center;
 	}
 }
 
@@ -980,5 +992,25 @@ body {
 	.demo__button:not(:last-child) {
 		margin-right: 0;
 		margin-bottom: 20px;
+	}
+
+	.footer__menu {
+		flex-direction: column;
+	}
+
+	.footer__menu-col {
+		text-align: center;
+	}
+
+	.footer__menu-col:first-child {
+		margin-right: 0;
+	}
+
+	.footer__menu-col:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.footer__title {
+		margin-bottom: 30px;
 	}
 }
